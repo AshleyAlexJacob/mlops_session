@@ -14,5 +14,6 @@ RUN /root/.cargo/bin/uv venv /home/packages/.venv
 
 RUN /root/.cargo/bin/uv pip install --no-cache --system  -r requirements.txt
 
+CMD [ "python", "predict.py" ]
 
 

@@ -4,3 +4,5 @@
 4. Download Dataset
 https://shorturl.at/9vhVM
 mlflow server --backend-store-uri ./mlruns
+
+docker build -t predict:latest .
