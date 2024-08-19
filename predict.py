@@ -13,7 +13,7 @@ uri = f"runs:/{run_id}/pipeline_random_forest"
 def load_model():
     return mlflow.sklearn.load_model(uri)
 
-@app.get('/predict')    
+@app.post('/predict')    
 def run_predict(data: ModelInput):
     model = load_model()
     data_dict =  data.model_dump()
@@ -21,4 +21,4 @@ def run_predict(data: ModelInput):
     prediction = model.predict(model_input)[0]
     return JSONResponse({"result": prediction}, status_code=200)
 if __name__ == "__main__":
-    uvicorn.run(app, host="0.0.0.0", port= 8000)
+    uvicorn.run("predict:app", host="0.0.0.0", port= 8000)
