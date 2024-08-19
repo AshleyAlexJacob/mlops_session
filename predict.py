@@ -14,6 +14,7 @@ uri = f"runs:/{run_id}/pipeline_random_forest"
 def load_model():
     # return mlflow.sklearn.load_model(uri)
     with open("mlruns/601362966769247400/2d196898faf74470a5b46035e0a9f6ed/artifacts/pipeline_random_forest/model.pkl", 'rb') as file:
+        print('in model')
         model = pickle.load(file)
         return model
 
