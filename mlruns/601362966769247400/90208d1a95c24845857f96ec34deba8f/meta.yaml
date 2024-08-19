@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/ashleyalexjacob/Data_Science/mlops_session/mlruns/601362966769247400/90208d1a95c24845857f96ec34deba8f/artifacts
+end_time: 1723795307647
+entry_point_name: ''
+experiment_id: '601362966769247400'
+lifecycle_stage: active
+run_id: 90208d1a95c24845857f96ec34deba8f
+run_name: languid-dog-444
+run_uuid: 90208d1a95c24845857f96ec34deba8f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1723795301519
+status: 3
+tags: []
+user_id: ashleyalexjacob
