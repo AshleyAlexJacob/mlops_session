@@ -6,3 +6,6 @@ https://shorturl.at/9vhVM
 mlflow server --backend-store-uri ./mlruns
 
 docker build -t predict:latest .
+docker run -p 8000:8000 prediction:latest
+
+#### Jenkins Pipeline
