@@ -9,3 +9,4 @@ docker build -t predict:latest .
 docker run -p 8000:8000 prediction:latest
 
 #### Jenkins Pipeline
+1. Pipeline configured
